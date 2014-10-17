@@ -1,0 +1,27 @@
+# Input File Specification for CS 311 Project 1
+# Bryan Thornbury
+
+T 					# T ::= Number of FSA's in input file (Test Cases)
+
+#For T to 1
+
+N 					# N ::= Number of States
+f F1 F2 ... Ff		# f ::= Number of Final States, Fi ::= Final State i
+a A1 A2 ... Aa		# a ::= Number of Symbols in Alphabet, Ai ::= symbol i
+
+D					# D ::= Number of Deterministic Transitions
+#For D to 1
+p a q 				# p ::= initial state, a ::= input symbol, q ::= resultant state
+#EndFor
+
+U					# U ::= number of non-deterministic transitions
+#For U to 1
+p a q Q1 Q2 ... Qq  # p ::= initial state, a ::= input symbol, q ::= number of resultant states, Qi ::= resultant state i
+#EndFor
+
+S 					# S ::= Number of Test Strings
+#For S to 1
+s 					# s ::= string to test
+#EndFor
+
+#EndFor
